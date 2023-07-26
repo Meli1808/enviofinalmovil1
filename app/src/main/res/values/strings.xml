@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">PuebliandoAPP</string>
+    <string name="resenahoteles">Los hoteles en esta hermosa region ofrecen una experiencia acogedora y servicios excepcionales para una estadia inolvidable. </string>
+    <string name="resenarestaurantes">Los restaurantes de esta encantadora region ofrecen una deliciosa gastronomia con platos autenticos y una experiencia culinaria excepcional.</string>
+    <string name="resenasitios">Explorar los encantadores lugares y sitios de esta region te sumergira en su belleza natural y su rica cultura.</string>
+
+    <string name="opcion1">Español</string>
+    <string name="opcion2">Ingles</string>
+    <string name="opcion3">Italiano</string>
+    <string name="opcion4">Acerca de</string>
+
+    <string name="biografia">Melissa, estudiante de 19 años en desarrollo de software. Amante de la naturaleza, animales y la natacion.
+        Disfruto compartir tiempo con mi familia y amigos, una fuente constante de felicidad.</string>
+
+    <string name="usuariologin">Usuario
+    </string>
+    <string name="passwordlogin">Contraseña
+    </string>
+    <string name="vermas">VER MAS</string>
+    <string name="bienvenidohome">BIENVENIDO</string>
+    <string name="ingresarlog">INGRESAR</string>
+    <string name="boton1home">HOTELES</string>
+    <string name="boton2home">RESTAURANTES</string>
+    <string name="boton3home">SITIOS</string>
+    <string name="cliente">CLIENTE</string>
+    <string name="ginebra">GINEBRA</string>
+
+
+
+
+</resources>
+

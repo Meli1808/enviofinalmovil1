@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PuebliandoAPP</string>
+    <string name="resenahoteles">The hotels in this beautiful region offer a cozy experience and exceptional services for an unforgettable stay.</string>
+    <string name="resenarestaurantes">The restaurants in this charming region offer delicious cuisine with authentic dishes and an exceptional culinary experience.</string>
+    <string name="resenasitios">Exploring the charming places and sites of this region will immerse you in its natural beauty and rich culture.</string>
+
+    <string name="opcion1">Spanish</string>
+    <string name="opcion2">English</string>
+    <string name="opcion3">Italian</string>
+    <string name="opcion4">About us</string>
+
+    <string name="biografia">Melissa, a 19-year-old student in software development. Lover of nature, animals and swimming.
+        I enjoy sharing time with my family and friends, a constant source of happiness</string>
+
+    <string name="usuariologin">User
+    </string>
+    <string name="passwordlogin">password
+    </string>
+    <string name="vermas">SEE MORE</string>
+    <string name="bienvenidohome">WELCOME</string>
+    <string name="ingresarlog">GET INTO</string>
+    <string name="boton1home">HOTELS</string>
+    <string name="boton2home">RESTAURANTS</string>
+    <string name="boton3home">SITES</string>
+    <string name="cliente">CUSTOMER</string>
+    <string name="ginebra">GENEVA</string>
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PuebliandoAPP</string>
+    <string name="resenahoteles">Gli hotel in questa bellissima regione offrono un esperienza accogliente e servizi eccezionali per un soggiorno indimenticabile. </string>
+    <string name="resenarestaurantes">I ristoranti di questa incantevole regione offrono una deliziosa gastronomia con piatti autentici e un esperienza culinaria eccezionale.</string>
+    <string name="resenasitios">Esplorare i luoghi incantevoli di questa regione ti immergera nella sua bellezza naturale e nella sua ricca cultura.</string>
+
+    <string name="opcion1">Spagnolo</string>
+    <string name="opcion2">Inglese</string>
+    <string name="opcion3">Italiano</string>
+    <string name="opcion4">Di</string>
+
+    <string name="biografia">Melissa, una studentessa di sviluppo software di 19 anni. Amante della natura, degli animali e del nuoto.
+        Mi piace condividere il tempo con la mia famiglia e i miei amici,una costante fonte di felicita.</string>
+
+    <string name="usuariologin">Utente
+    </string>
+    <string name="passwordlogin">Parola dordine
+    </string>
+    <string name="vermas">SAPERNE DI PIU</string>
+    <string name="bienvenidohome">BENVENUTO</string>
+    <string name="ingresarlog">CARTELLO</string>
+    <string name="boton1home">HOTELES</string>
+    <string name="boton2home">RISTORANT</string>
+    <string name="boton3home">SITI</string>
+    <string name="cliente">CLIENTE</string>
+    <string name="ginebra">GINEVRA</string>
+</resources>
