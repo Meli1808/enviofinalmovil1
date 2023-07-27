@@ -61,43 +61,47 @@ public class Home extends AppCompatActivity {
         });
     }
 
-    public void cambiarIdioma(String idioma) {
-        // Configurar el lenguaje del teléfono
-        Locale lenguaje = new Locale(idioma);
+    public void cambiarIdioma(String idioma){
+
+        //configurar el lenguaje del telefono
+        Locale lenguaje=new Locale(idioma);
         Locale.setDefault(lenguaje);
 
-        // Configurar globalmente el teléfono
-        Configuration configuracionTelefono = getResources().getConfiguration();
-        configuracionTelefono.locale = lenguaje;
+        //Configuramos globalmente el telefono
+        Configuration configuracionTelefono=getResources().getConfiguration();
+        configuracionTelefono.locale=lenguaje;
 
-        // Ejecutar la configuración
-        getBaseContext().getResources().updateConfiguration(configuracionTelefono, getBaseContext().getResources().getDisplayMetrics());
+        //Ejecutamos la configuracion
+        getBaseContext().getResources().updateConfiguration(configuracionTelefono,getBaseContext().getResources().getDisplayMetrics());
+
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu, menu);
+    public boolean onCreateOptionsMenu(Menu menu){
+        getMenuInflater().inflate(R.menu.menu,menu);
         return true;
     }
 
-    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int itemSeleccionado = item.getItemId();
 
+
         if (itemSeleccionado == R.id.opcion1) {
-            cambiarIdioma("en");
+            this.cambiarIdioma("en");
             Intent intentIngles = new Intent(Home.this, Home.class);
             startActivity(intentIngles);
+
         } else if (itemSeleccionado == R.id.opcion2) {
-            // Código para la opción 2
-        } else if (itemSeleccionado == R.id.opcion3) {
-            // Código para la opción 3
+            this.cambiarIdioma("es");
+            Intent intentEspanol = new Intent(Home.this, Home.class);
+            startActivity(intentEspanol);
         } else if (itemSeleccionado == R.id.opcion4) {
             Intent intent = new Intent(Home.this, Acerca.class);
             startActivity(intent);
-        }
 
+
+        }
         return super.onOptionsItemSelected(item);
     }
+
 }
 
