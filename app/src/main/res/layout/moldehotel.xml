@@ -1,86 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    tools:context=".moldes.MoldeHotel">
+
 
     <ImageView
-        android:id="@+id/fotolistahotel"
+        android:id="@+id/fotoListaHotel"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/hotel1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.0" />
-
+        android:src="@drawable/hotel1"
+        android:scaleType="fitXY"
+        app:layout_constraintVertical_bias="0"
+        />
     <TextView
-        android:id="@+id/nombrelistahotel"
+        android:id="@+id/nombreListaHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/fotolistahotel"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fotoListaHotel"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:text="Hotel Grajales"
-        app:layout_constraintVertical_bias="0.05"
-        app:layout_constraintHorizontal_bias="0.1"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        />
-
-    <TextView
-        android:id="@+id/preciolistahotel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/nombrelistahotel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:text="$80.000"
         app:layout_constraintVertical_bias="0.01"
         app:layout_constraintHorizontal_bias="0.1"
         android:textSize="26dp"
         android:textStyle="bold"
-        android:textColor="@color/black"
         />
 
     <TextView
-        android:id="@+id/contactolistahotel"
+        android:id="@+id/precioListaHotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="$80000 COP"
+        android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.048"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_BottomOf="@+id/preciolistahotel"
+        app:layout_constraintTop_toBottomOf="@id/nombreListaHotel"
+        app:layout_constraintVertical_bias="0.048"
+
+        />
+
+    <TextView
+        android:id="@+id/contactoListaHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:text="Contacto:"
-        app:layout_constraintVertical_bias="0.01"
-        app:layout_constraintHorizontal_bias="0.1"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        />
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toEndOf="@id/precioListaHotel"
+        app:layout_constraintTop_toBottomOf="@id/nombreListaHotel"
+        app:layout_constraintVertical_bias="0.048" />
 
     <TextView
-        android:id="@+id/celularlistahotel"
+        android:id="@+id/telefonolistahotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/nombrelistahotel"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
         android:text="3107099476"
-        app:layout_constraintVertical_bias="0.01"
-        app:layout_constraintHorizontal_bias="0.1"
-        android:textSize="26dp"
-        android:textStyle="bold"
-        android:textColor="@color/black"
-        />
-
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintStart_toEndOf="@id/precioListaHotel"
+        app:layout_constraintTop_toBottomOf="@id/nombreListaHotel"
+        app:layout_constraintVertical_bias="0.048" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
