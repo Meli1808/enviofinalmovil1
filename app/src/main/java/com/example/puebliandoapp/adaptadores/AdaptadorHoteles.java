@@ -14,30 +14,30 @@ import com.example.puebliandoapp.moldes.MoldeHotel;
 
 import java.util.ArrayList;
 
-public class adaptadorhoteles extends RecyclerView.Adapter<adaptadorhoteles.viewHolder> {
+public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.viewHolder> {
 
     //TODO ADAPTADOR TIENE UNA LISTA DE ELEMENTOS
     public ArrayList<MoldeHotel> listaHoteles;
 
     //Creamos un constructor vacìo
-    public adaptadorhoteles() {
+    public AdaptadorHoteles() {
     }
 
     //Creamos un constructor lleno
-    public adaptadorhoteles(ArrayList<MoldeHotel> listaHoteles) {
+    public AdaptadorHoteles(ArrayList<MoldeHotel> listaHoteles) {
         this.listaHoteles = listaHoteles;
     }
 
     @NonNull
     @Override
-    public adaptadorhoteles.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AdaptadorHoteles.viewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         //Esta porciòn de còdigo permite crear N copias del molde gràfico.
         View vista= LayoutInflater.from(parent.getContext()).inflate(R.layout.moldehotel,null,false);
         return new viewHolder(vista);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull adaptadorhoteles.viewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AdaptadorHoteles.viewHolder holder, int position) {
         holder.actualizarDatos(listaHoteles.get(position));
     }
 
@@ -67,3 +67,4 @@ public class adaptadorhoteles extends RecyclerView.Adapter<adaptadorhoteles.view
         }
     }
 }
+

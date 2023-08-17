@@ -29,9 +29,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nombrelistares"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintVertical_bias="0.15" />
+        app:layout_constraintVertical_bias="0.05" />
 
     <TextView
         android:id="@+id/rangolistares"
@@ -45,23 +45,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.06"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintTop_toBottomOf="@id/fotolistares"
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/preciolistares"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="26dp"
         android:text="$40.500 - $101.300"
         android:textColor="@color/black"
         android:textSize="22dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndtOf="@id/rangolistares"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintStart_toEndOf="@id/rangolistares"
+        app:layout_constraintTop_toBottomOf="@id/fotolistares"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.02" />
 
     <TextView
         android:id="@+id/contactolistares"
@@ -73,7 +73,7 @@
         app:layout_constraintTop_toBottomOf="@id/rangolistares"
         android:text="Contacto:"
         app:layout_constraintVertical_bias="0.02"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.06"
         android:textSize="22dp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
@@ -84,16 +84,43 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/contactolistares"
+        app:layout_constraintTop_toBottomOf="@id/preciolistares"
         android:text="300 776 36 98"
         app:layout_constraintVertical_bias="0.02"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.05"
         android:textSize="22dp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
+    <TextView
+        android:id="@+id/platolistares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contactolistares"
+        android:text="Plato Recomendado:"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.06"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
-
+    <TextView
+        android:id="@+id/recomendadolistares"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/platolistares"
+        app:layout_constraintTop_toBottomOf="@id/telefonolistares"
+        android:text="Sancocho de Gallina"
+        app:layout_constraintVertical_bias="0.02"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
