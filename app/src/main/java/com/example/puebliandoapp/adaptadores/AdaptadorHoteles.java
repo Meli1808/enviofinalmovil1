@@ -56,7 +56,7 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
             fotoHotel=itemView.findViewById(R.id.fotoListaHotel);
             nombreHotel=itemView.findViewById(R.id.nombreListaHotel);
             precioHotel=itemView.findViewById(R.id.precioListaHotel);
-            contactoHotel=itemView.findViewById(R.id.contactoListaHotel);
+            contactoHotel=itemView.findViewById(R.id.telefonolistahotel);
         }
 
         public void actualizarDatos(MoldeHotel moldeHotel) {

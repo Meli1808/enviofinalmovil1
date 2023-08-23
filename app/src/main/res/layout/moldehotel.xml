@@ -27,8 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:text="Hotel Grajales"
-        app:layout_constraintVertical_bias="0.01"
+        android:text="Casa Benigno"
+        app:layout_constraintVertical_bias="0.03"
         app:layout_constraintHorizontal_bias="0.1"
         android:textSize="26dp"
         android:textStyle="bold"
@@ -42,10 +42,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nombreListaHotel"
-        app:layout_constraintVertical_bias="0.048"
+        app:layout_constraintVertical_bias="0.04"
 
         />
 
@@ -57,10 +57,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toEndOf="@id/precioListaHotel"
         app:layout_constraintTop_toBottomOf="@id/nombreListaHotel"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <TextView
         android:id="@+id/telefonolistahotel"
@@ -70,10 +70,10 @@
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.632"
+        app:layout_constraintHorizontal_bias="0.782"
         app:layout_constraintStart_toEndOf="@id/precioListaHotel"
         app:layout_constraintTop_toBottomOf="@id/nombreListaHotel"
-        app:layout_constraintVertical_bias="0.048" />
+        app:layout_constraintVertical_bias="0.04" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
