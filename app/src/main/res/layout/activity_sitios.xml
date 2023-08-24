@@ -9,7 +9,7 @@
 
 
     <TextView
-        android:id="@+id/reseñarestaurantes"
+        android:id="@+id/reseñaSitios"
         android:layout_width="148dp"
         android:layout_height="202dp"
         android:layout_marginBottom="208dp"
@@ -24,7 +24,7 @@
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/botonrestaurantes"
+        android:id="@+id/botonversitios"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/botonredondo"
@@ -32,7 +32,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/reseñarestaurantes"
+        app:layout_constraintTop_toBottomOf="@+id/reseñaSitios"
         app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintVertical_bias="0.1" />
 

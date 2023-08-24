@@ -58,13 +58,13 @@ public class AdaptadorSitios extends RecyclerView.Adapter<AdaptadorSitios.viewHo
             nombreSitio=itemView.findViewById(R.id.nombrelistasitios);
             nombreContactoSitio=itemView.findViewById(R.id.contactonombrelista);
             precioSitio=itemView.findViewById(R.id.preciolistamuseo);
-            telefonoSitio=itemView.findViewById(R.id.contactolista);
+            telefonoSitio=itemView.findViewById(R.id.numerolistamuseo);
         }
 
         public void actualizarDatos(MoldeTurismo moldeTurismo) {
             fotoSitio.setImageResource(moldeTurismo.getFoto());
             nombreSitio.setText(moldeTurismo.getNombre());
-            nombreContactoSitio.setText(moldeTurismo.getNombre());
+            nombreContactoSitio.setText(moldeTurismo.getNombreContacto());
             precioSitio.setText(moldeTurismo.getPrecio());
             telefonoSitio.setText(moldeTurismo.getTelefono());
         }

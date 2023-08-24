@@ -57,8 +57,8 @@ public class AdaptadorRestaurante extends RecyclerView.Adapter<AdaptadorRestaura
             fotoRestaurante=itemView.findViewById(R.id.fotolistares);
             nombreRestaurante=itemView.findViewById(R.id.nombrelistares);
             precioRestaurante=itemView.findViewById(R.id.preciolistares);
-            contactoRestaurante=itemView.findViewById(R.id.contactolistares);
-            platoRecomendadoRestaurantes=itemView.findViewById(R.id.platolistares);
+            contactoRestaurante=itemView.findViewById(R.id.telefonolistares);
+            platoRecomendadoRestaurantes=itemView.findViewById(R.id.recomendadolistares);
         }
 
         public void actualizarDatos(MoldeRestaurantes moldeRestaurantes) {
