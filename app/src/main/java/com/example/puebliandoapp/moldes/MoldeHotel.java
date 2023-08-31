@@ -1,6 +1,12 @@
 package com.example.puebliandoapp.moldes;
 
-public class MoldeHotel {
+import android.content.ServiceConnection;
+
+import java.io.Serializable;
+
+import kotlin.jvm.internal.SerializedIr;
+
+public class MoldeHotel implements Serializable {
 
     private String nombre;
     private String precio;

@@ -46,7 +46,7 @@
         app:layout_constraintVertical_bias="0.04" />
 
     <TextView
-        android:id="@+id/telefonolistahotel"
+        android:id="@+id/telefonoampliandohotel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3107099476"
@@ -58,18 +58,31 @@
         app:layout_constraintTop_toBottomOf="@id/precioampliandoHotel"
         app:layout_constraintVertical_bias="0.04" />
 
+    <TextView
+        android:id="@+id/resenaAmpliandohotel"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Refugio sereno en Ginebra, Valle. La cabaña fusiona comodidad moderna con encanto rústico. Vistas impresionantes, entorno tranquilo. Escape perfecto para conectarse con la naturaleza y rejuvenecer."
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/telefonoampliandohotel"
+        app:layout_constraintVertical_bias="0.04" />
+
     <Button
-        android:id="@+id/botonrestaurantes"
+        android:id="@+id/botonAmpliandohotel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="130dp"
         android:background="@drawable/botonredondo"
         android:textStyle="bold"
-
         android:text="Reservar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.9" />
+        app:layout_constraintTop_toBottomOf="@id/resenaAmpliandohotel"
+        app:layout_constraintVertical_bias="0.4" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
