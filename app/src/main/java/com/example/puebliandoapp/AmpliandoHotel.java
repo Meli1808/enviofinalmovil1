@@ -35,3 +35,6 @@ public class AmpliandoHotel extends AppCompatActivity {
 
         }
 }
+
+
+   // hola chat, estoy creando una aplicación en Android studio y ya tengo todo, el molde hotel, lista hotel, ampliando hotel pero necesito que cuando le de clic al molde por decirlo así,al momento de ampliar la información quiero que me aparezcan mas fotos, la pregunta es, yo ya tengo una foto, como puedo poner añadir otra foto y que sea como un slide?
