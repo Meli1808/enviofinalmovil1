@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.puebliandoapp.AmpliandoHotel;
+import com.example.puebliandoapp.ImageAdapter;
 import com.example.puebliandoapp.AmpliandoRestaurante;
 import com.example.puebliandoapp.R;
 import com.example.puebliandoapp.moldes.MoldeRestaurantes;
