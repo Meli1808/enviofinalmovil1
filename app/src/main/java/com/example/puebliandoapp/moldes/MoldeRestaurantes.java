@@ -9,7 +9,7 @@ public class MoldeRestaurantes implements Serializable {
     private String telefono;
     private String platoRecomendado;
     private Integer foto;
-
+    
     public MoldeRestaurantes() {
     }
 

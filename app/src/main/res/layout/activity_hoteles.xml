@@ -9,17 +9,17 @@
 
     <TextView
         android:id="@+id/reseñahotel"
-        android:layout_width="183dp"
-        android:layout_height="139dp"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
         android:text="@string/resenahoteles"
-        android:textSize="15dp"
+        android:textSize="18dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.873" />
+        app:layout_constraintVertical_bias="0.9" />
 
     <Button
         android:id="@+id/botonhoteles"
