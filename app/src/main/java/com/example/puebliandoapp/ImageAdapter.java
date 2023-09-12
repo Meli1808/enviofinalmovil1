@@ -22,9 +22,10 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
     @NonNull
     @Override
     public ImageViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_ampliando_hotel, parent, false);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.activity_ampliando_hotel, parent, false); // Cambia "item_image" al nombre correcto de tu diseño de elemento del carrusel
         return new ImageViewHolder(view);
     }
+
 
     @Override
     public void onBindViewHolder(@NonNull ImageViewHolder holder, int position) {

@@ -10,6 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.puebliandoapp.AmpliandoHotel;
 import com.example.puebliandoapp.ImageAdapter;
 import com.example.puebliandoapp.R;
 import com.example.puebliandoapp.moldes.MoldeHotel;
@@ -70,7 +71,7 @@ public class AdaptadorHoteles extends RecyclerView.Adapter<AdaptadorHoteles.view
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent intent = new Intent(itemView.getContext(), AdaptadorHoteles.class);
+                    Intent intent = new Intent(itemView.getContext(), AmpliandoHotel.class);
                     intent.putExtra("datoshotel", moldeHotel);
                     itemView.getContext().startActivity(intent);
                 }
