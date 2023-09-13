@@ -13,7 +13,7 @@ public class MoldeHotel implements Serializable {
     private String telefono;
     private Integer foto;
     private String descripcion;
-    private  Integer fotoAdicional;
+    private Integer fotoAdicional;
 
     public MoldeHotel() { //Constructor vacio
     }

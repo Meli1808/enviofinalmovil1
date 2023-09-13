@@ -25,14 +25,9 @@
     <string name="cliente">CLIENTE</string>
     <string name="ginebra">GINEBRA</string>
 
-    <string name="CasaBenigno">Casa Benigno</string>
+
     <string name="Reservar">Reservar</string>
-    <string name="ResenaAmpHotel">Refugio sereno en Ginebra, Valle. La cabaña fusiona comodidad moderna con encanto rustico.
-        Vistas impresionantes, entorno tranquilo. Escape perfecto para conectarse con la naturaleza y rejuvenecer.</string>
-    <string name="ResenaAmpRes">Exquisita experiencia campestre en cada plato. En el corazon de Ginebra, Valle, este restaurante estilo rustico deleita
-        con sabores autenticos en un entorno pintoresco inolvidable.</string>
-    <string name="ResenaAmpTurismo">Sumergete en la grandeza en la Hacienda Museo Vivo, Ginebra, Valle. Elegante fusion de arquitectura ancestral y arte local.
-        Una experiencia enriquecedora e inspiradora.</string>
+
 
 </resources>
 

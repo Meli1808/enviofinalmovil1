@@ -120,7 +120,7 @@
         android:id="@+id/resenaAmpliandomuseo"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="@string/ResenaAmpTurismo"
+        android:text="ResenaAmpTurismo"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

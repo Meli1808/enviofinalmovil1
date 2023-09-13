@@ -26,13 +26,8 @@
     <string name="cliente">CUSTOMER</string>
     <string name="ginebra">GENEVA</string>
 
-    <string name="CasaBenigno">Benigno s house</string>
+
     <string name="Reservar">Reserve</string>
-    <string name="ResenaAmpHotel">Serene Retreat in Geneva Valley. The cabin blends modern comfort with rustic charm. Stunning views, peaceful surroundings.
-        Perfect getaway to connect with nature and rejuvenate.</string>
-    <string name="ResenaAmpRes">Exquisite countryside experience in every dish. In the heart of Geneva Valley, this rustic-style restaurant
-        delights with authentic flavors in an unforgettable picturesque setting</string>
-    <string name="ResenaAmpTurismo">Immerse yourself in grandeur at the Living Museum Hacienda, Geneva, Valley.
-        An elegant fusion of ancestral architecture and local art. An enriching and inspiring experience.</string>
+
 
 </resources>

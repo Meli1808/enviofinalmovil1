@@ -21,6 +21,7 @@ public class AmpliandoHotel extends AppCompatActivity {
     TextView precioAmpliandoHotel;
     TextView telefonoAmpliandoHotel;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
