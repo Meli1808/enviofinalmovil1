@@ -32,10 +32,10 @@
         android:src="@drawable/restaurante1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/nombreampliandores"
-        app:layout_constraintVertical_bias="0.02"/>
+        app:layout_constraintVertical_bias="0.03"/>
 
     <ImageView
         android:id="@+id/fotoampliandores2"
@@ -49,7 +49,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@id/fotoampliandores"
         app:layout_constraintTop_toBottomOf="@id/nombreampliandores"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/rangoampliandores"
@@ -61,10 +61,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/fotoampliandores"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/precioampliandores"
@@ -78,8 +78,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/rangoampliandores"
         app:layout_constraintTop_toBottomOf="@id/fotoampliandores"
-        app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintVertical_bias="0.02" />
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintVertical_bias="0.03" />
 
     <TextView
         android:id="@+id/contactoampliandores"
@@ -91,8 +91,8 @@
         app:layout_constraintTop_toBottomOf="@id/rangoampliandores"
         android:text="Contacto:"
         app:layout_constraintVertical_bias="0.02"
-        app:layout_constraintHorizontal_bias="0.06"
-        android:textSize="22dp"
+        app:layout_constraintHorizontal_bias="0.28"
+        android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
 
@@ -106,7 +106,7 @@
         app:layout_constraintTop_toBottomOf="@id/precioampliandores"
         android:text="300 776 36 98"
         app:layout_constraintVertical_bias="0.02"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.2"
         android:textSize="22dp"
         android:textStyle="bold"
         android:textColor="@color/white"/>
@@ -121,7 +121,7 @@
         app:layout_constraintTop_toBottomOf="@id/contactoampliandores"
         android:text="Plato Recomendado:"
         app:layout_constraintVertical_bias="0.02"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.02"
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="@color/black"/>
@@ -136,7 +136,7 @@
         app:layout_constraintTop_toBottomOf="@id/telefonoampliandores"
         android:text="Sancocho de Gallina"
         app:layout_constraintVertical_bias="0.02"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.12"
         android:textSize="20dp"
         android:textStyle="bold"
         android:textColor="@color/white"/>
@@ -160,13 +160,13 @@
         android:id="@+id/comentarioAmpliandores"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="El restaurante me encantó, buena ubicación, las zonas verdes espectaculares, tiene piscina y el servicio al cliente es lo máximo."
+        android:text="''El restaurante me encantó, buena ubicación, las zonas verdes espectaculares, tiene piscina y el servicio al cliente es lo máximo.''"
         android:textColor="@color/white"
         android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.171"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/comentariosubAmpliandores"
         app:layout_constraintVertical_bias="0.052" />
@@ -177,7 +177,7 @@
         android:layout_height="wrap_content"
         android:text="Calificación"
         android:textColor="@color/black"
-        android:textSize="20dp"
+        android:textSize="25dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -192,12 +192,15 @@
         android:layout_height="50dp"
         android:progressTint="@color/goldenrod"
         android:rating="5"
+        android:scaleY="0.6"
+        android:scaleX="0.6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/calificacionAmpliandores"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <Button
         android:id="@+id/botonAmpliandohotel"

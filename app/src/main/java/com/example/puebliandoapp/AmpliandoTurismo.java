@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -18,6 +19,9 @@ public class AmpliandoTurismo extends AppCompatActivity {
     TextView  nombrecontactoAmpliandoTur;
     TextView  telefonoAmpliandoTur;
     TextView  precioAmpliandoTur;
+    ImageView fotoAdicionalampliandomuseo;
+    TextView comentarioAmpliandomuseo;
+    RatingBar valorAmpliandomuseo;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +32,9 @@ public class AmpliandoTurismo extends AppCompatActivity {
         nombrecontactoAmpliandoTur=findViewById(R.id.contactonombreAmpliando);
         telefonoAmpliandoTur=findViewById(R.id.numeroAmpliandomuseo);
         precioAmpliandoTur=findViewById(R.id.precioAmpliandomuseo);
+        fotoAdicionalampliandomuseo=findViewById(R.id.fotoAmpliandomuseo2);
+        comentarioAmpliandomuseo=findViewById(R.id.comentarioAmpliandomuseo);
+        valorAmpliandomuseo=findViewById(R.id.valoracionAmpliandomuseo);
         moldeTurismo=(MoldeTurismo) getIntent().getSerializableExtra("datosTurismo");
 
         //Cargando la info en los componentes gráficos
@@ -36,5 +43,8 @@ public class AmpliandoTurismo extends AppCompatActivity {
         nombrecontactoAmpliandoTur.setText(moldeTurismo.getNombreContacto());
         telefonoAmpliandoTur.setText(moldeTurismo.getTelefono());
         precioAmpliandoTur.setText(moldeTurismo.getPrecio());
+        fotoAdicionalampliandomuseo.setImageResource(moldeTurismo.getFotoAdicional());
+        comentarioAmpliandomuseo.setText(moldeTurismo.getComentario());
+        valorAmpliandomuseo.setRating(moldeTurismo.getValoracion());
     }
 }

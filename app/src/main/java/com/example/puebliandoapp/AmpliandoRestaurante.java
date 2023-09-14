@@ -21,6 +21,8 @@ public class AmpliandoRestaurante extends AppCompatActivity {
     TextView telefonoAmpliandoRes;
     TextView platorecomendadoAmpliandoRes;
     TextView precioAmpliandoRes;
+    ImageView fotoAdicionalampliandoRes;
+    TextView comentarioAmpliandoRes;
     RatingBar valorAmpliandoRes;
 
     @Override
@@ -33,8 +35,9 @@ public class AmpliandoRestaurante extends AppCompatActivity {
         telefonoAmpliandoRes=findViewById(R.id.telefonoampliandores);
         platorecomendadoAmpliandoRes=findViewById(R.id.recomendadoampliandores);
         precioAmpliandoRes=findViewById(R.id.precioampliandores);
-        //valorAmpliandoRes=findViewById(R.id.valorampliando);
-
+        valorAmpliandoRes=findViewById(R.id.valoracionAmpliandores);
+        comentarioAmpliandoRes=findViewById(R.id.comentarioAmpliandores);
+        fotoAdicionalampliandoRes=findViewById(R.id.fotoampliandores2);
         moldeRestaurantes=(MoldeRestaurantes) getIntent().getSerializableExtra("datosRestaurante");
 
         //Cargando la info en los componentes gráficos
@@ -44,20 +47,8 @@ public class AmpliandoRestaurante extends AppCompatActivity {
         platorecomendadoAmpliandoRes.setText(moldeRestaurantes.getPlatoRecomendado());
         precioAmpliandoRes.setText(moldeRestaurantes.getRangoprecio());
         valorAmpliandoRes.setRating(moldeRestaurantes.getValoracion());
-
+        comentarioAmpliandoRes.setText(moldeRestaurantes.getComentario());
+        fotoAdicionalampliandoRes.setImageResource(moldeRestaurantes.getFotoAdicional());
 
     }
 }
-
-/*<RatingBar
-        android:id="@+id/valorampliando"
-                android:layout_width="231dp"
-                android:layout_height="50dp"
-                android:progressTint="@color/goldenrod"
-                android:rating="2"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.083"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.114" />*/
