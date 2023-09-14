@@ -5,6 +5,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import com.example.puebliandoapp.ImageAdapter;
@@ -20,7 +21,9 @@ public class AmpliandoHotel extends AppCompatActivity {
     TextView nombreAmpliandoHotel;
     TextView precioAmpliandoHotel;
     TextView telefonoAmpliandoHotel;
-
+    TextView comentarioAmpliandoHotel;
+    ImageView fotoAdicionalAmpliandoHotel;
+    RatingBar valorAmpliandoHotel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,9 @@ public class AmpliandoHotel extends AppCompatActivity {
         nombreAmpliandoHotel = findViewById(R.id.nombreampliandoHotel);
         precioAmpliandoHotel = findViewById(R.id.precioampliandoHotel);
         telefonoAmpliandoHotel = findViewById(R.id.telefonoampliandohotel);
+        comentarioAmpliandoHotel=findViewById(R.id.comentarioAmpliandohotel);
+        fotoAdicionalAmpliandoHotel=findViewById(R.id.fotoampliandoHotel2);
+        valorAmpliandoHotel=findViewById(R.id.valoracionAmpliandohotel);
         moldeHotel = (MoldeHotel) getIntent().getSerializableExtra("datoshotel");
 
         // Cargando la info en los componentes gráficos
@@ -37,8 +43,16 @@ public class AmpliandoHotel extends AppCompatActivity {
         nombreAmpliandoHotel.setText(moldeHotel.getNombre());
         precioAmpliandoHotel.setText(moldeHotel.getPrecio());
         telefonoAmpliandoHotel.setText(moldeHotel.getTelefono());
+        comentarioAmpliandoHotel.setText((moldeHotel.getComentario()));
+        fotoAdicionalAmpliandoHotel.setImageResource(moldeHotel.getFotoAdicional());
+        valorAmpliandoHotel.setRating(moldeHotel.getValoracion());
 
-        // 1. Obtén una referencia al ViewPager2 dentro del onCreate.
+
+    }
+}
+
+
+      /* 1. Obtén una referencia al ViewPager2 dentro del onCreate.
         ViewPager2 viewPager = findViewById(R.id.viewPager);
 
         // 2. Crea una lista de recursos de imágenes (IDs) que deseas mostrar en el carrusel.
@@ -52,6 +66,4 @@ public class AmpliandoHotel extends AppCompatActivity {
         ImageAdapter adapter = new ImageAdapter(this, imageList);
 
         // 4. Configura el adaptador en el ViewPager2.
-        viewPager.setAdapter(adapter);
-    }
-}
+        viewPager.setAdapter(adapter);*/

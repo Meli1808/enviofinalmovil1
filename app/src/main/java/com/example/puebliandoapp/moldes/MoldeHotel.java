@@ -12,34 +12,20 @@ public class MoldeHotel implements Serializable {
     private String precio;
     private String telefono;
     private Integer foto;
-    private String descripcion;
+    private String comentario;
+    private Float valoracion;
     private Integer fotoAdicional;
 
     public MoldeHotel() { //Constructor vacio
     }
 
-    public MoldeHotel(String nombre, String precio, String telefono, Integer foto, String descripcion, Integer fotoAdicional) {
+    public MoldeHotel(String nombre, String precio, String telefono, Integer foto, String comentario, Float valoracion, Integer fotoAdicional) {
         this.nombre = nombre;
         this.precio = precio;
         this.telefono = telefono;
         this.foto = foto;
-        this.descripcion = descripcion;
-        this.fotoAdicional = fotoAdicional;
-    }
-
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public Integer getFotoAdicional() {
-        return fotoAdicional;
-    }
-
-    public void setFotoAdicional(Integer fotoAdicional) {
+        this.comentario = comentario;
+        this.valoracion = valoracion;
         this.fotoAdicional = fotoAdicional;
     }
 
@@ -73,5 +59,29 @@ public class MoldeHotel implements Serializable {
 
     public void setFoto(Integer foto) {
         this.foto = foto;
+    }
+
+    public String getComentario() {
+        return comentario;
+    }
+
+    public void setComentario(String comentario) {
+        this.comentario = comentario;
+    }
+
+    public Float getValoracion() {
+        return valoracion;
+    }
+
+    public void setValoracion(Float valoracion) {
+        this.valoracion = valoracion;
+    }
+
+    public Integer getFotoAdicional() {
+        return fotoAdicional;
+    }
+
+    public void setFotoAdicional(Integer fotoAdicional) {
+        this.fotoAdicional = fotoAdicional;
     }
 }
