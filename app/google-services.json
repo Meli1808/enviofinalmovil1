@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "377408191355",
+    "project_id": "turistiandoemjz",
+    "storage_bucket": "turistiandoemjz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:377408191355:android:6c13a39ef96d56897c1bde",
+        "android_client_info": {
+          "package_name": "com.example.puebliandoapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDn8irE7ajrJSCbWUwi-rE_LUYSFdye7m0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

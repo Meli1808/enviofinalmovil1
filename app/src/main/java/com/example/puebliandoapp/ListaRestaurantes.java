@@ -1,13 +1,21 @@
 package com.example.puebliandoapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
+import com.example.puebliandoapp.adaptadores.AdaptadorHoteles;
 import com.example.puebliandoapp.adaptadores.AdaptadorRestaurante;
 import com.example.puebliandoapp.moldes.MoldeRestaurantes;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -15,6 +23,8 @@ public class ListaRestaurantes extends AppCompatActivity {
 
     ArrayList<MoldeRestaurantes> listaRestaurantes=new ArrayList<>();
     RecyclerView recyclerView;
+
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +37,27 @@ public class ListaRestaurantes extends AppCompatActivity {
         AdaptadorRestaurante adaptadorRestaurante=new AdaptadorRestaurante(listaRestaurantes);
         recyclerView.setAdapter(adaptadorRestaurante);
 
+        // Realiza la consulta a Firebase
+        db.collection("hoteles")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                String nombreHotel = document.getString("nombre");
+                                String precioHotel = document.getString("precio");
+                                // Aquí puedes crear un objeto MoldeHotel con los datos y agregarlo a la lista
+                                // Ejemplo:
+                            }
+                            // Una vez que hayas agregado todos los hoteles a listaHoteles, configura el adaptador
+                            AdaptadorHoteles adaptadorHotel = new AdaptadorHoteles(listaRestaurantes);
+                            recyclerView.setAdapter(adaptadorHotel);
+                        } else {
+                            Toast.makeText(ListaRestaurantes.this, "Error al obtener datos", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
     public void llenarListaConDatos(){
         listaRestaurantes.add(new MoldeRestaurantes("Restaurante Hacienda Venecia", "$40.500 - $101.300 COP", "3107099476", "Sancocho de Gallina", R.drawable.restaurante1, "''El restaurante me encantó, buena ubicación, las zonas verdes espectaculares, tiene piscina y el servicio al cliente es lo máximo.''", 5f, R.drawable.restaurante11));
