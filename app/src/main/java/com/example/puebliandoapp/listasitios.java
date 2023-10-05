@@ -1,13 +1,21 @@
 package com.example.puebliandoapp;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.widget.Toast;
 
+import com.example.puebliandoapp.adaptadores.AdaptadorRestaurante;
 import com.example.puebliandoapp.adaptadores.AdaptadorSitios;
 import com.example.puebliandoapp.moldes.MoldeTurismo;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.QueryDocumentSnapshot;
+import com.google.firebase.firestore.QuerySnapshot;
 
 import java.util.ArrayList;
 
@@ -15,6 +23,8 @@ public class listasitios extends AppCompatActivity {
 
     ArrayList<MoldeTurismo> ListaSitios=new ArrayList<>();
     RecyclerView recyclerView;
+
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +36,35 @@ public class listasitios extends AppCompatActivity {
         llenarListaConDatos();
         AdaptadorSitios adaptadorSitios=new AdaptadorSitios(ListaSitios);
         recyclerView.setAdapter(adaptadorSitios);
+
+        // Realiza la consulta a Firebase
+        db.collection("Sitios Turísticos")
+                .get()
+                .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                    @Override
+                    public void onComplete(@NonNull Task<QuerySnapshot> task) {
+                        if (task.isSuccessful()) {
+                            for (QueryDocumentSnapshot document : task.getResult()) {
+                                String nombreSitios = document.getString("Nombre");
+                                Toast.makeText(listasitios.this,nombreSitios, Toast.LENGTH_SHORT).show();
+                                String precioSitios= document.getString("Precio");
+                                Toast.makeText(listasitios.this,precioSitios, Toast.LENGTH_SHORT).show();
+                                String telefonoSitios= document.getString("Teléfono");
+                                Toast.makeText(listasitios.this,telefonoSitios, Toast.LENGTH_SHORT).show();
+                                String fotoSitios= document.getString("Foto");
+                                Toast.makeText(listasitios.this,fotoSitios, Toast.LENGTH_SHORT).show();
+                                String guiaSitios= document.getString("Guía Turístico");
+                                Toast.makeText(listasitios.this,guiaSitios, Toast.LENGTH_SHORT).show();
+                                // Aquí puedes crear un objeto MoldeRestaurante con los datos y agregarlo a la lista
+                                // Ejemplo:
+                            }
+                            AdaptadorSitios adaptadorSitios = new AdaptadorSitios(ListaSitios);
+                            recyclerView.setAdapter(adaptadorSitios);
+                        } else {
+
+                        }
+                    }
+                });
 
     }
     public void llenarListaConDatos(){

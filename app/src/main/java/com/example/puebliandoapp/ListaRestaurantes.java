@@ -38,23 +38,30 @@ public class ListaRestaurantes extends AppCompatActivity {
         recyclerView.setAdapter(adaptadorRestaurante);
 
         // Realiza la consulta a Firebase
-        db.collection("hoteles")
+        db.collection("Restaurantes")
                 .get()
                 .addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
-                                String nombreHotel = document.getString("nombre");
-                                String precioHotel = document.getString("precio");
-                                // Aquí puedes crear un objeto MoldeHotel con los datos y agregarlo a la lista
+                                String nombreRes = document.getString("Nombre");
+                                Toast.makeText(ListaRestaurantes.this,nombreRes, Toast.LENGTH_SHORT).show();
+                                String precioRes= document.getString("Precio");
+                                Toast.makeText(ListaRestaurantes.this,precioRes, Toast.LENGTH_SHORT).show();
+                                String telefonoRes= document.getString("Teléfono");
+                                Toast.makeText(ListaRestaurantes.this,telefonoRes, Toast.LENGTH_SHORT).show();
+                                String fotoRes= document.getString("Foto");
+                                Toast.makeText(ListaRestaurantes.this,fotoRes, Toast.LENGTH_SHORT).show();
+                                String platocasaRes= document.getString("Plato de la casa");
+                                Toast.makeText(ListaRestaurantes.this,platocasaRes, Toast.LENGTH_SHORT).show();
+                                // Aquí puedes crear un objeto MoldeRestaurante con los datos y agregarlo a la lista
                                 // Ejemplo:
                             }
-                            // Una vez que hayas agregado todos los hoteles a listaHoteles, configura el adaptador
-                            AdaptadorHoteles adaptadorHotel = new AdaptadorHoteles(listaRestaurantes);
-                            recyclerView.setAdapter(adaptadorHotel);
+                            AdaptadorRestaurante adaptadorRestaurante = new AdaptadorRestaurante(listaRestaurantes);
+                            recyclerView.setAdapter(adaptadorRestaurante);
                         } else {
-                            Toast.makeText(ListaRestaurantes.this, "Error al obtener datos", Toast.LENGTH_SHORT).show();
+
                         }
                     }
                 });

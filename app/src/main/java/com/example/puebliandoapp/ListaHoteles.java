@@ -41,6 +41,8 @@ public class ListaHoteles extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 String nombreHotel = document.getString("Nombre");
+                                Toast.makeText(ListaHoteles.this, "", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaHoteles.this, "", Toast.LENGTH_SHORT).show();
                                 String precioHotel = document.getString("Precio");
                                 String TelefonoHotel = document.getString("Teléfono");
                                 String FotoHotel = document.getString("Foto");
