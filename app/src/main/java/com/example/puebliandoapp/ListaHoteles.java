@@ -41,12 +41,15 @@ public class ListaHoteles extends AppCompatActivity {
                         if (task.isSuccessful()) {
                             for (QueryDocumentSnapshot document : task.getResult()) {
                                 String nombreHotel = document.getString("Nombre");
-                                Toast.makeText(ListaHoteles.this, "", Toast.LENGTH_SHORT).show();
-                                Toast.makeText(ListaHoteles.this, "", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(ListaHoteles.this, "nombreHotel", Toast.LENGTH_SHORT).show();
                                 String precioHotel = document.getString("Precio");
+                                Toast.makeText(ListaHoteles.this, "precioHotel", Toast.LENGTH_SHORT).show();
                                 String TelefonoHotel = document.getString("Teléfono");
+                                Toast.makeText(ListaHoteles.this, "TelefonoHotel", Toast.LENGTH_SHORT).show();
                                 String FotoHotel = document.getString("Foto");
+                                Toast.makeText(ListaHoteles.this, "FotoHotel", Toast.LENGTH_SHORT).show();
                                 String DescripcionHotel = document.getString("Descripción");
+                                Toast.makeText(ListaHoteles.this, "DescripcionHotel", Toast.LENGTH_SHORT).show();
                                 // Aquí puedes crear un objeto MoldeHotel con los datos y agregarlo a la lista
                                 // Ejemplo:
                             }
@@ -54,7 +57,7 @@ public class ListaHoteles extends AppCompatActivity {
                             AdaptadorHoteles adaptadorHotel = new AdaptadorHoteles(listaHoteles);
                             recyclerView.setAdapter(adaptadorHotel);
                         } else {
-                            Toast.makeText(ListaHoteles.this, "Error al obtener datos", Toast.LENGTH_SHORT).show();
+
                         }
                     }
                 });
